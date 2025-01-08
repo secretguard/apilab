@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Playground - Shodan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>API Playground - Shodan</h1>
+    </header>
+    <main>
+        <!-- Input Section -->
+        <section id="input-section">
+            <h2>Search Shodan</h2>
+            <div class="input-group">
+                <label for="search-keyword">Search Keyword:</label>
+                <input type="text" id="search-keyword" placeholder="Enter search keyword">
+                <span class="icon icon-search"></span>
+            </div>
+            <div class="input-group">
+                <label for="api-key">Shodan API Key:</label>
+                <input type="text" id="api-key" placeholder="Enter your API key">
+                <span class="icon icon-key"></span>
+            </div>
+            <button id="search-button">Search</button>
+        </section>
+
+        <!-- Processing Section -->
+        <section id="processing-section">
+            <h2>Processing</h2>
+            <div>
+                <h3>Request:</h3>
+                <pre id="request-viewer">No request yet</pre>
+            </div>
+            <div>
+                <h3>Response:</h3>
+                <pre id="response-viewer">No response yet</pre>
+            </div>
+        </section>
+
+        <!-- Output Section -->
+        <section id="output-section">
+            <h2>Results</h2>
+            <div id="results-viewer">No results yet</div>
+        </section>
+
+        <!-- Loading Spinner -->
+        <div id="spinner" class="spinner" style="display: none;"></div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sarath G</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
