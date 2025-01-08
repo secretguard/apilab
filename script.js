@@ -1,7 +1,7 @@
 // JavaScript for Shodan API Lab
 
 const CONFIG = {
-    apiUrl: "http://localhost:3000/proxy", // Default API URL
+    apiUrl: "https://apilab-rqh9.onrender.com/proxy", 
 };
 
 document.addEventListener("DOMContentLoaded", () => {
